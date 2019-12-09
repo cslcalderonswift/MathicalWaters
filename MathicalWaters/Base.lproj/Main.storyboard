@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sDN-XG-ufh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sDN-XG-ufh">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,16 +16,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KX-4f-U4V">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4KX-4f-U4V">
                                 <rect key="frame" x="144" y="403" width="127" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Press here to start"/>
                                 <connections>
                                     <segue destination="BV1-FR-VrT" kind="show" id="bbY-uV-EwI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mathical Waters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azo-Sy-iP7">
+                                <rect key="frame" x="61.5" y="44" width="291" height="78"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="65"/>
+                                <color key="textColor" red="0.99207359552383423" green="0.99221211671829224" blue="0.99202984571456909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mathical Waters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4a-Wl-SAI">
+                                <rect key="frame" x="68" y="44" width="291" height="78"/>
+                                <fontDescription key="fontDescription" name="SavoyeLetPlain" family="Savoye LET" pointSize="65"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Add 2 Win" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmB-DT-adV">
+                                <rect key="frame" x="139.5" y="97" width="135" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.99207359552383423" green="0.99221211671829224" blue="0.99202984571456909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Add 2 Win" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iBC-tm-dba">
+                                <rect key="frame" x="140" y="103" width="135" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YrP-sd-dug">
+                                <rect key="frame" x="41" y="96" width="19" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.11937399953603745" green="0.28976476192474365" blue="0.94101279973983765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbx-qg-aJe">
+                                <rect key="frame" x="361" y="96" width="19" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.11937399953603745" green="0.28976476192474365" blue="0.94101279973983765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.77825182676315308" green="0.87636512517929077" blue="0.9443354606628418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lbx-qg-aJe" firstAttribute="leading" secondItem="N4a-Wl-SAI" secondAttribute="trailing" constant="2" id="8TC-zR-1sT"/>
+                            <constraint firstItem="4KX-4f-U4V" firstAttribute="top" secondItem="iBC-tm-dba" secondAttribute="bottom" constant="264" id="A9b-F8-jrE"/>
+                            <constraint firstItem="azo-Sy-iP7" firstAttribute="centerX" secondItem="0au-rP-ajD" secondAttribute="centerX" id="AdY-6d-Sog"/>
+                            <constraint firstItem="azo-Sy-iP7" firstAttribute="leading" secondItem="YrP-sd-dug" secondAttribute="trailing" constant="1.5" id="EoH-q2-fpg"/>
+                            <constraint firstItem="YrP-sd-dug" firstAttribute="top" secondItem="Zu1-hl-ynj" secondAttribute="top" constant="52" id="Lv8-gv-1FB"/>
+                            <constraint firstItem="Zu1-hl-ynj" firstAttribute="bottom" secondItem="Lbx-qg-aJe" secondAttribute="bottom" constant="730" id="PHY-bi-tK7"/>
+                            <constraint firstItem="Zu1-hl-ynj" firstAttribute="bottom" secondItem="YrP-sd-dug" secondAttribute="bottom" constant="730" id="PVv-nO-ifR"/>
+                            <constraint firstItem="Zu1-hl-ynj" firstAttribute="trailing" secondItem="Lbx-qg-aJe" secondAttribute="trailing" constant="34" id="QR5-Nw-dLP"/>
+                            <constraint firstItem="Lbx-qg-aJe" firstAttribute="leading" secondItem="N4a-Wl-SAI" secondAttribute="trailing" constant="2" id="dTu-7z-MVj"/>
+                            <constraint firstItem="FmB-DT-adV" firstAttribute="centerX" secondItem="0au-rP-ajD" secondAttribute="centerX" id="eUl-EP-k1t"/>
+                            <constraint firstItem="YrP-sd-dug" firstAttribute="leading" secondItem="Zu1-hl-ynj" secondAttribute="leading" constant="41" id="fpH-Y1-eo7"/>
+                            <constraint firstItem="N4a-Wl-SAI" firstAttribute="leading" secondItem="YrP-sd-dug" secondAttribute="trailing" constant="8" id="hQn-kF-4z0"/>
+                            <constraint firstItem="Lbx-qg-aJe" firstAttribute="top" secondItem="Zu1-hl-ynj" secondAttribute="top" constant="52" id="tGs-ze-mg0"/>
+                            <constraint firstItem="iBC-tm-dba" firstAttribute="top" secondItem="Zu1-hl-ynj" secondAttribute="top" constant="59" id="u60-HO-kyY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Zu1-hl-ynj"/>
                     </view>
                 </viewController>
