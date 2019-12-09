@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		45986F382399719700FDCE23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45986F372399719700FDCE23 /* AppDelegate.swift */; };
-		45986F3A2399719700FDCE23 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45986F392399719700FDCE23 /* GameScene.sks */; };
-		45986F3C2399719700FDCE23 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 45986F3B2399719700FDCE23 /* Actions.sks */; };
 		45986F3E2399719700FDCE23 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45986F3D2399719700FDCE23 /* GameScene.swift */; };
 		45986F402399719700FDCE23 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45986F3F2399719700FDCE23 /* GameViewController.swift */; };
 		45986F432399719700FDCE23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45986F412399719700FDCE23 /* Main.storyboard */; };
@@ -17,6 +15,7 @@
 		45986F482399719700FDCE23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45986F462399719700FDCE23 /* LaunchScreen.storyboard */; };
 		45986F532399719700FDCE23 /* MathicalWatersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45986F522399719700FDCE23 /* MathicalWatersTests.swift */; };
 		45986F5E2399719800FDCE23 /* MathicalWatersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45986F5D2399719800FDCE23 /* MathicalWatersUITests.swift */; };
+		B52358E5239EBC9D00BA426B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B52358E4239EBC9D00BA426B /* GameScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +38,6 @@
 /* Begin PBXFileReference section */
 		45986F342399719700FDCE23 /* MathicalWaters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathicalWaters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45986F372399719700FDCE23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		45986F392399719700FDCE23 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		45986F3B2399719700FDCE23 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		45986F3D2399719700FDCE23 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		45986F3F2399719700FDCE23 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		45986F422399719700FDCE23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +50,7 @@
 		45986F592399719800FDCE23 /* MathicalWatersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathicalWatersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45986F5D2399719800FDCE23 /* MathicalWatersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathicalWatersUITests.swift; sourceTree = "<group>"; };
 		45986F5F2399719800FDCE23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B52358E4239EBC9D00BA426B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				45986F372399719700FDCE23 /* AppDelegate.swift */,
-				45986F392399719700FDCE23 /* GameScene.sks */,
-				45986F3B2399719700FDCE23 /* Actions.sks */,
+				B52358E4239EBC9D00BA426B /* GameScene.sks */,
 				45986F3D2399719700FDCE23 /* GameScene.swift */,
 				45986F3F2399719700FDCE23 /* GameViewController.swift */,
 				45986F412399719700FDCE23 /* Main.storyboard */,
@@ -238,11 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B52358E5239EBC9D00BA426B /* GameScene.sks in Resources */,
 				45986F432399719700FDCE23 /* Main.storyboard in Resources */,
-				45986F3A2399719700FDCE23 /* GameScene.sks in Resources */,
 				45986F452399719700FDCE23 /* Assets.xcassets in Resources */,
 				45986F482399719700FDCE23 /* LaunchScreen.storyboard in Resources */,
-				45986F3C2399719700FDCE23 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
