@@ -13,8 +13,18 @@ class GameScene: SKScene {
     
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
-    
-    override func didMove(to view: SKView) {
+    // 1
+           let boat = SKSpriteNode(imageNamed: "Boat")
+             
+           override func didMove(to view: SKView) {
+             // 2
+             backgroundColor = UIColor(red: 0.56, green: 0.99, blue: 1, alpha: 1)
+             // 3
+             boat.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
+             // 4
+             addChild(boat)
+           }
+    /*override func didMove(to view: SKView) {
         
         // Get label node from scene and store it for use later
         self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
@@ -35,7 +45,7 @@ class GameScene: SKScene {
                                               SKAction.fadeOut(withDuration: 0.5),
                                               SKAction.removeFromParent()]))
         }
-    }
+    }*/
     
     
     func touchDown(atPoint pos : CGPoint) {
