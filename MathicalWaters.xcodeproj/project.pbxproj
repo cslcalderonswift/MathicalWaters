@@ -15,6 +15,7 @@
 		45986F482399719700FDCE23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45986F462399719700FDCE23 /* LaunchScreen.storyboard */; };
 		45986F532399719700FDCE23 /* MathicalWatersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45986F522399719700FDCE23 /* MathicalWatersTests.swift */; };
 		45986F5E2399719800FDCE23 /* MathicalWatersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45986F5D2399719800FDCE23 /* MathicalWatersUITests.swift */; };
+		45DDC89823A405A0003F2E8A /* FinishScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DDC89723A405A0003F2E8A /* FinishScreen.swift */; };
 		B52358E5239EBC9D00BA426B /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B52358E4239EBC9D00BA426B /* GameScene.sks */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		45986F592399719800FDCE23 /* MathicalWatersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathicalWatersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45986F5D2399719800FDCE23 /* MathicalWatersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathicalWatersUITests.swift; sourceTree = "<group>"; };
 		45986F5F2399719800FDCE23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45DDC89723A405A0003F2E8A /* FinishScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishScreen.swift; sourceTree = "<group>"; };
 		B52358E4239EBC9D00BA426B /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				45986F3D2399719700FDCE23 /* GameScene.swift */,
 				45986F3F2399719700FDCE23 /* GameViewController.swift */,
 				45986F412399719700FDCE23 /* Main.storyboard */,
+				45DDC89723A405A0003F2E8A /* FinishScreen.swift */,
 				45986F442399719700FDCE23 /* Assets.xcassets */,
 				45986F462399719700FDCE23 /* LaunchScreen.storyboard */,
 				45986F492399719700FDCE23 /* Info.plist */,
@@ -265,6 +268,7 @@
 			files = (
 				45986F3E2399719700FDCE23 /* GameScene.swift in Sources */,
 				45986F402399719700FDCE23 /* GameViewController.swift in Sources */,
+				45DDC89823A405A0003F2E8A /* FinishScreen.swift in Sources */,
 				45986F382399719700FDCE23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
