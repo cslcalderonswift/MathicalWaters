@@ -40,6 +40,10 @@
                                 <color key="textColor" red="0.11937399953603745" green="0.28976476192474365" blue="0.94101279973983765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="5jW-zN-h7G">
+                                <rect key="frame" x="0.0" y="452" width="427" height="286"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="water-1" translatesAutoresizingMaskIntoConstraints="NO" id="bLc-r6-Dkh">
                                 <rect key="frame" x="-121" y="605" width="623" height="361"/>
                             </imageView>
@@ -67,6 +71,46 @@
                                     <segue destination="BV1-FR-VrT" kind="show" id="bbY-uV-EwI"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="5af-UN-prk">
+                                <rect key="frame" x="276" y="519" width="158" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="Hts-oY-8Io">
+                                <rect key="frame" x="222" y="563" width="235" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="Ffu-sk-Y8R">
+                                <rect key="frame" x="222" y="515" width="235" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="5s9-82-p5y">
+                                <rect key="frame" x="232" y="521" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="sN3-Gi-0yG">
+                                <rect key="frame" x="194" y="583" width="240" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="Zfz-dt-ovO">
+                                <rect key="frame" x="-26" y="465" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="V9A-Ya-eLe">
+                                <rect key="frame" x="-26" y="545" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="Nxo-wA-sHp">
+                                <rect key="frame" x="276" y="597" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="3fj-cu-Z4N">
+                                <rect key="frame" x="104" y="616" width="240" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue background" translatesAutoresizingMaskIntoConstraints="NO" id="yIf-V2-Eac">
+                                <rect key="frame" x="172" y="452" width="70" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.77825182676315308" green="0.87636512517929077" blue="0.9443354606628418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -260,6 +304,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Blue background" width="93" height="67"/>
         <image name="Boat" width="360" height="360"/>
         <image name="water-1" width="360" height="144"/>
     </resources>
