@@ -18,7 +18,7 @@ class GameScene: SKScene {
              
            override func didMove(to view: SKView) {
              // 2
-             backgroundColor = UIColor(red: 0.56, green: 0.99, blue: 1, alpha: 1)
+            backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
              // 3
              boat.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
              // 4
