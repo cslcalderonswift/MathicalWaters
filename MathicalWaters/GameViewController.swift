@@ -12,6 +12,13 @@ import GameplayKit
 
 class GameViewController: UIViewController {
     
+    @IBOutlet var textField: UITextView!
+    @IBOutlet var numberButtons: [UIButton]!
+    @IBAction func numberButtonsPressed(_ sender: UIButton) {
+        textField.text += sender.title(for: .normal)!
+    }
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
