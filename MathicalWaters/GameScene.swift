@@ -14,29 +14,30 @@ class GameScene: SKScene {
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     var won = true
-
-    var equations:[String: Int] =
-    ["7 + 3": 10,
-     "9 + 2": 11,
-    "6 + 18": 24,
-    "15 + 15": 30,
-    "3 + 2": 6,
-    "6 + 8": 14,
-    "32 + 35": 67,
-    "6 + 7": 13,
-    "60 + 30": 90,
-    "22 + 21": 43,
-    "8 + 4": 12,
-    "22 + 32": 54,
-    "5 + 100": 105,
-    "8 + 7": 15,
-    "44 + 45": 89,
-    "3 + 14": 17,
-    "29 + 43": 72,
-    "7 + 7": 14,
-    "7 + 14": 21,
-    "10 + 18": 38]
+    var index = 0
+    var equations:[String] =
+    ["7 + 3",
+     "9 + 2",
+    "6 + 18",
+    "15 + 15",
+    "3 + 2",
+    "6 + 8",
+    "32 + 35",
+    "6 + 7",
+    "60 + 30",
+    "22 + 21",
+    "8 + 4",
+    "22 + 32",
+    "5 + 100",
+    "8 + 7",
+    "44 + 45",
+    "3 + 14",
+    "29 + 43",
+    "7 + 7",
+    "7 + 14",
+    "10 + 18"]
     
+
     // 1
            let boat = SKSpriteNode(imageNamed: "Boat")
              
@@ -44,15 +45,20 @@ class GameScene: SKScene {
              // 2
             backgroundColor = UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)
              // 3
-             boat.position = CGPoint(x: size.width * 0.5, y: size.height * 0.5)
+             boat.position = CGPoint(x: size.width * 0.5, y: size.height * 0.4)
+            boat.size = CGSize(width: 100, height: 100)
              // 4
              addChild(boat)
-            run(SKAction.repeatForever(
-              SKAction.sequence([
-                SKAction.run(addRain),
-                SKAction.wait(forDuration: 1.0)
-                ])
-            ))
+            
+          run(SKAction.repeatForever(
+            SKAction.sequence([
+              SKAction.run(addRain),
+              SKAction.wait(forDuration: 8.0)
+              ])
+          )
+            )
+
+
 
             if !won {
                 let gameOverScene = FinishScreen(size: self.size, won: false)
@@ -96,26 +102,35 @@ class GameScene: SKScene {
       return random() * (max - min) + min
     }
 
-    func addRain() {
+func addRain() {
       
       // Create sprite
-        for (eq, _) in equations {
+        
+        //for (eq) in equations{
+    if(index >= equations.count){
+        
+    }else{
+    var eq = equations[index]
+    
+       SKAction.wait(forDuration: 5.0)
             let rain = SKLabelNode(fontNamed: "Damascus")
-            rain.text = eq
+                rain.text = eq
             rain.fontColor = .black
             rain.fontSize = 11
-            let y = random(min: size.height + 1, max: size.height + rain.fontSize)
+            let y = size.height+1
             rain.position = CGPoint(x: size.width/2, y: y)
             addChild(rain)
-            let actualDuration = random(min: CGFloat(2.0), max: CGFloat(4.0))
+            let actualDuration = 5
             let actionMove = SKAction.move(to: CGPoint(x: size.width/2, y: boat.position.y + boat.size.height),
                                            duration: TimeInterval(actualDuration))
             let actionMoveDone = SKAction.removeFromParent()
             rain.run(SKAction.sequence([actionMove, actionMoveDone]))
-        }
+        
+        
       //let rain = SKSpriteNode(imageNamed: "monster")
-      
-      
+      index += 1
+    }
+       //}
     }
 
 }
