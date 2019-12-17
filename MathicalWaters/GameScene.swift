@@ -53,7 +53,7 @@ class GameScene: SKScene {
           run(SKAction.repeatForever(
             SKAction.sequence([
               SKAction.run(addRain),
-              SKAction.wait(forDuration: 8.0)
+              SKAction.wait(forDuration: 5.0)
               ])
           )
             )
