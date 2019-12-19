@@ -12,7 +12,7 @@ import GameplayKit
 
 class GameViewController: UIViewController {
     
-    var answer: Int = 0
+    var userAnswer: Int = 0
     
     @IBOutlet var textField: UITextView!
     @IBOutlet var numberButtons: [UIButton]!
@@ -26,6 +26,12 @@ class GameViewController: UIViewController {
         
     }
     
+    @IBAction func enterUserInput(_ sender: UIButton) {
+        let answer: String = textField.text
+        userAnswer = Int(answer) ?? 0
+        textField.text = ""
+        print(answer)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
