@@ -12,6 +12,8 @@ import GameplayKit
 
 class GameViewController: UIViewController {
     
+    var answer: Int = 0
+    
     @IBOutlet var textField: UITextView!
     @IBOutlet var numberButtons: [UIButton]!
     @IBOutlet weak var deleteButton: UIButton!
@@ -24,7 +26,7 @@ class GameViewController: UIViewController {
         
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
