@@ -318,6 +318,9 @@
                                                 <state key="normal" title="Enter">
                                                     <color key="titleColor" red="0.034165371209383011" green="0.12580925226211548" blue="0.43513089418411255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="enterUserInput:" destination="BV1-FR-VrT" eventType="touchUpInside" id="gXd-oK-euP"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
