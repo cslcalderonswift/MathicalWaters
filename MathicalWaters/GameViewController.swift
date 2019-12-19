@@ -12,14 +12,21 @@ import GameplayKit
 
 class GameViewController: UIViewController {
     
+    var answer: Int = 0
+    
     @IBOutlet var textField: UITextView!
     @IBOutlet var numberButtons: [UIButton]!
+    @IBOutlet weak var deleteButton: UIButton!
     @IBAction func numberButtonsPressed(_ sender: UIButton) {
         textField.text += sender.title(for: .normal)!
     }
-
     
-
+    @IBAction func backspaceUserInput(_ sender: Any) {
+        textField.text = ""
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
