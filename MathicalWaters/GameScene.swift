@@ -37,7 +37,9 @@ class GameScene: SKScene {
     "7 + 14",
     "10 + 18"]
     
-
+    static var answer: Int = 0
+    
+    
     // 1
            let boat = SKSpriteNode(imageNamed: "Boat")
              
@@ -129,8 +131,15 @@ func addRain() {
         
       //let rain = SKSpriteNode(imageNamed: "monster")
       index += 1
+        print(GameScene.answer)
     }
        //}
     }
+    
+    static func setAnswer(userAnswer: String) {
+        answer = Int(userAnswer) ?? 0
+    }
+    
+
 
 }
