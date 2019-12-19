@@ -31,6 +31,8 @@ class GameViewController: UIViewController {
         userAnswer = Int(answer) ?? 0
         textField.text = ""
         print(answer)
+        GameScene.setAnswer(userAnswer: answer)
+        
     }
     
     override func viewDidLoad() {
