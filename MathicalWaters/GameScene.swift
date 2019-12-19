@@ -62,10 +62,7 @@ class GameScene: SKScene {
 
 
 
-            if won == false{
-                let gameOverScene = FinishScreen(size: self.size, won: false)
-                self.view?.presentScene(gameOverScene)
-            }
+      
            }
     /*override func didMove(to view: SKView) {
         
@@ -106,53 +103,53 @@ class GameScene: SKScene {
 
 func addRain() {
       
-      // Create sprite
-        
-        //for (eq) in equations{
     if(index >= equations.count){
         
+        
+        
     }else{
-    var eq = equations[index]
-    
-       SKAction.wait(forDuration: 5.0)
-            let rain = SKLabelNode(fontNamed: "Damascus")
-                rain.text = eq
-            rain.fontColor = .black
-            rain.fontSize = 11
-        let firstNumber = eq.prefix(1)
         
-        let myFirstNumber = (firstNumber as NSString).integerValue
-        
-        //print(myFirstNumber)
+        var eq = equations[index]
         
         
         
-        let secondNumber = eq.suffix(1)
+        SKAction.wait(forDuration: 5.0)
         
-        let mySecondNumber = (secondNumber as NSString).integerValue
+        let rain = SKLabelNode(fontNamed: "Damascus")
         
-      //  print(mySecondNumber)
+        rain.text = eq
+        
+        rain.fontColor = .black
+        
+        rain.fontSize = 11
+        
+        let y = size.height+1
+        
+        rain.position = CGPoint(x: size.width/2, y: y)
+        
+        addChild(rain)
+        
+        let actualDuration = 5
+        
+        let actionMove = SKAction.move(to: CGPoint(x: size.width/2, y: boat.position.y + boat.size.height),
+                                       
+                                       duration: TimeInterval(actualDuration))
+        
+        let actionMoveDone = SKAction.removeFromParent()
+        
+        rain.run(SKAction.sequence([actionMove, actionMoveDone]))
         
         
         
-       // print(myFirstNumber + mySecondNumber)
         
-      
-       
-            let actualDuration = 5
-            let actionMove = SKAction.move(to: CGPoint(x: size.width/2, y: boat.position.y + boat.size.height),
-                                           duration: TimeInterval(actualDuration))
-            let actionMoveDone = SKAction.removeFromParent()
-            rain.run(SKAction.sequence([actionMove, actionMoveDone]))
-        if ((myFirstNumber + mySecondNumber) != GameScene.answer){
-            won = false
-        }
         
-      //let rain = SKSpriteNode(imageNamed: "monster")
-      index += 1
-        //print(GameScene.answer)
+        //let rain = SKSpriteNode(imageNamed: "monster")
+        
+        index += 1
+        
+        print(GameScene.answer)
+        
     }
-       //}
     }
     
     static func setAnswer(userAnswer: String) {
