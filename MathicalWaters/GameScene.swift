@@ -18,24 +18,24 @@ class GameScene: SKScene {
     var equations:[String] =
     ["7 + 3",
      "9 + 2",
-    "6 + 18",
-    "15 + 15",
+    "6 + 1",
+    "5 + 1",
     "3 + 2",
     "6 + 8",
-    "32 + 35",
+    "3 + 3",
     "6 + 7",
-    "60 + 30",
-    "22 + 21",
+    "6 + 3",
+    "2 + 2",
     "8 + 4",
-    "22 + 32",
-    "5 + 100",
+    "2 + 3",
+    "5 + 1",
     "8 + 7",
-    "44 + 45",
-    "3 + 14",
-    "29 + 43",
+    "4 + 4",
+    "3 + 4",
+    "9 + 3",
     "7 + 7",
-    "7 + 14",
-    "10 + 18"]
+    "7 + 4",
+    "1 + 8"]
     
     static var answer: Int = 0
     
@@ -62,7 +62,7 @@ class GameScene: SKScene {
 
 
 
-            if !won {
+            if won == false{
                 let gameOverScene = FinishScreen(size: self.size, won: false)
                 self.view?.presentScene(gameOverScene)
             }
@@ -119,9 +119,28 @@ func addRain() {
                 rain.text = eq
             rain.fontColor = .black
             rain.fontSize = 11
-            let y = size.height+1
-            rain.position = CGPoint(x: size.width/2, y: y)
-            addChild(rain)
+        let firstNumber = eq.prefix(1)
+        
+        let myFirstNumber = (firstNumber as NSString).integerValue
+        
+        //print(myFirstNumber)
+        
+        
+        
+        let secondNumber = eq.suffix(1)
+        
+        let mySecondNumber = (secondNumber as NSString).integerValue
+        
+      //  print(mySecondNumber)
+        
+        
+        
+       // print(myFirstNumber + mySecondNumber)
+        
+        if ((myFirstNumber + mySecondNumber) != GameScene.answer){
+            won = false
+        }
+       
             let actualDuration = 5
             let actionMove = SKAction.move(to: CGPoint(x: size.width/2, y: boat.position.y + boat.size.height),
                                            duration: TimeInterval(actualDuration))
@@ -131,7 +150,7 @@ func addRain() {
         
       //let rain = SKSpriteNode(imageNamed: "monster")
       index += 1
-        print(GameScene.answer)
+        //print(GameScene.answer)
     }
        //}
     }
