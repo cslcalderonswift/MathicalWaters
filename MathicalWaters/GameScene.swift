@@ -137,16 +137,16 @@ func addRain() {
         
        // print(myFirstNumber + mySecondNumber)
         
-        if ((myFirstNumber + mySecondNumber) != GameScene.answer){
-            won = false
-        }
+      
        
             let actualDuration = 5
             let actionMove = SKAction.move(to: CGPoint(x: size.width/2, y: boat.position.y + boat.size.height),
                                            duration: TimeInterval(actualDuration))
             let actionMoveDone = SKAction.removeFromParent()
             rain.run(SKAction.sequence([actionMove, actionMoveDone]))
-        
+        if ((myFirstNumber + mySecondNumber) != GameScene.answer){
+            won = false
+        }
         
       //let rain = SKSpriteNode(imageNamed: "monster")
       index += 1
